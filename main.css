@@ -1,0 +1,111 @@
+.animada{
+    transition: all 750ms ease-in-out;
+}
+#efeito{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+#efeito .sticky{
+    transform: rotate(50deg);
+}
+#efeito:hover .sticky{
+    transform: rotate(0deg);
+}
+#efeito .sticky{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+}
+#efeito .revelado .circulo{
+    box-shadow: 0 1px 0px rgba(0, 0, 0,.15);
+    font-family: 'Helvetica neue', Arial;
+    font-weight: 200;
+    font-weight: bold;
+    line-height: 140px;
+    text-align: center;
+    color: #234028;
+    cursor: pointer;
+}
+#efeito .revelado .circulo{
+    background: #caf1d3;
+}
+#efeito .circulo_escondido{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 0px;
+    top:0px;
+    overflow: hidden;
+}
+#efeito .circulo{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+    border-radius: 999px;
+}
+#efeito .traz{
+    height: 10px;
+    top: 30px;
+}
+#efeito:hover .traz{
+    height: 90px;
+    top: 110px;
+}
+#efeito .traz .circulo{
+    margin-top: -130px;
+    background-color: #40ec43;
+    background-image: -webkit-linear-gradient(bottom,
+    rgba(251,236,63,0),
+    rgba(13,237,162,0.8));
+}
+#efeito:hover .traz .circulo{
+    margin-top: -50px;
+}
+#efeito .frente{
+    height: 150px;
+    bottom: 0;
+    top: auto;
+    -webkit-box-shadow: 0 -140px 20px -140px
+    rgba(0,0,0,.3)
+}
+#efeito:hover .frente{
+    height: 70px;
+    -webkit-box-shadow: 0 -60px 10px -60px
+    rgba(0,0,0,.1)
+}
+#efeito .frente .circulo{
+    margin-top: -10px;
+    background: #40ec45;
+    background-image: -webkit-linear-gradient(bottom,
+    rgba(251,236,63,.0) 75%, #3aa44a 95%);
+    background-image: -moz-linear-gradient(bottom,
+    rgba(251,236,63,.0) 75%, #3aa44a 95%);
+    background-image: linear-gradient(bottom,
+    rgba(251,236,63,.0) 75%, #3aa44a 95%);
+}
+#efeito h4{
+    font-family: 'Helvetica neue', arial;
+    font-weight: 200 bold;
+    text-align: center;
+    color: #234028;
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    line-height: 140px;
+    transition: opacity 50ms linear 400ms;
+}
+#efeito:hover h4{
+    opacity: 0;
+    transition: opacity 50ms linear 300ms;
+}
+#efeito:hover .frente .circulo{
+    margin-top: -90px;
+    background-color: #0cec0c;
+    background-position: 0 100px;
+}
